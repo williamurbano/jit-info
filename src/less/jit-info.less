@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Podkova:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import 'variables.less';
+@import 'mixins.less';
+@import 'buttons.less';
+@import 'forms.less';
 
 // CORES
 @pomegranate: #C0392B;
@@ -43,6 +46,10 @@ body {
   color: @pomegranate;
   font-size: 18px;
   font-family: @openSans;
+}
+
+textarea {
+  resize: none;
 }
 
 .uppercase {
@@ -231,6 +238,7 @@ body {
     }
   }
   
+  .contato,
   .clientes,
   .servicos {
     margin-top: 30px;
@@ -239,7 +247,6 @@ body {
       padding-top: 20px;
 
       &>div {
-        margin: 20px 0;
         min-height: 160px;
       }
     }
@@ -270,8 +277,37 @@ body {
     }
 
     .img-responsive.cliente-logo {
-      margin: 0 auto;
       min-height: 65px;
+    }
+  }
+
+  .clientes,
+  .servicos {
+    .row {
+      &>div {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .contato {
+    .row {
+      padding-top: 20px;
+
+      .column-aside:first-child {
+        margin-top: 0px;
+        margin-bottom: 5px;
+
+        .row {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .formulario-de-contato {
+      .control-label {
+        font-weight: inherit;
+      }
     }
   }
 
@@ -303,6 +339,15 @@ body {
       margin-top: 30px;
     }
   }
+
+  .contato {
+    .row {
+      .column-aside:last-child {
+        border-top: 1px solid #e7e7e7;
+        padding-top: 20px;
+      }
+    }
+  }
 }
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
@@ -319,6 +364,15 @@ body {
 
     &.text-center {
       margin-top: 130px;
+    }
+  }
+
+  .contato {
+    .row {
+      .column-aside:last-child {
+        border-top: 1px solid #e7e7e7;
+        padding-top: 20px;
+      }
     }
   }
 }
