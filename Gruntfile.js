@@ -46,7 +46,8 @@ module.exports = function(grunt) {
         },
         src: ['src/js/<%= pkg.name %>.js'],
         dest: 'build/js/<%= pkg.name %>.js'
-      }/*,
+      },
+      
       clientes: {
         src: ['src/partials/head.html', 'src/pages/clientes.html', 'src/partials/footer.html'],
         dest: 'clientes.html'
@@ -66,7 +67,7 @@ module.exports = function(grunt) {
       sobre: {
         src: ['src/partials/head.html', 'src/pages/sobre.html', 'src/partials/footer.html'],
         dest: 'sobre.html'
-      }*/
+      }
     },
 
     uglify: {
@@ -141,7 +142,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-replace');
 
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('build', ['clean', 'less', 'concat', 'uglify', 'copy']);
