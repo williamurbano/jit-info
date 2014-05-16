@@ -112,8 +112,12 @@ body {
           background-color: @pomegranate;
         }
 
-        &:hover, &:active, &:visited, &:focus {
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
           background-color: @pomegranate;
+
           .icon-bar {
             background-color: @white;
           }
@@ -129,7 +133,7 @@ body {
           padding: 0;
 
           li {
-            text-transform: uppercase;          
+            text-transform: uppercase;
 
             a {
               color: @pomegranate;
@@ -139,11 +143,13 @@ body {
               padding: 6px 11px;
               text-decoration: none;
               text-transform: uppercase;
-              
-              &.active,
-              &:active,
-              &:focus,
-              &:hover {
+            }
+
+            &.active,
+            &:active,
+            &:focus,
+            &:hover {
+              a {
                 color: @white;
                 background-color: @pomegranate;
               }
@@ -160,14 +166,20 @@ body {
         }
 
         &.hidden-lg.hidden-md.hidden-sm {
-          li > a {
-            color: @pomegranate;
-            text-transform: uppercase;
+          li {
+            &> a {
+              color: @pomegranate;
+              text-transform: uppercase;
+            }
 
             &:hover,
-            &:focus {
-              background-color: @pomegranate;
-              color: @white;
+            &:focus,
+            &:active,
+            &.active {
+              &> a {
+                background-color: @pomegranate;
+                color: @white;
+              }
             }
           }
         }
