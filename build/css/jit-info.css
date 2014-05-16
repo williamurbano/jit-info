@@ -13,6 +13,10 @@ body {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .logo {
   display: block;
 }
@@ -50,22 +54,6 @@ body {
 #container {
   min-height: 100%;
   position: relative;
-  /*.apresentacao {
-    font-size: @textApresentacao;
-    font-weight: 500;
-    line-height: 24px;
-
-    h1 {
-      font-size: @h1Apresentacao;
-      text-transform: uppercase;
-      margin: 15px 0;
-      padding: 0;
-    }
-
-    &.text-center {
-      margin-top: 130px;
-    }
-  }*/
 }
 #container .navbar .navbar-header .navbar-brand {
   height: auto;
@@ -162,16 +150,20 @@ body {
   background-color: #c0392b;
   color: #ffffff;
 }
+#container .clientes,
 #container .servicos {
   margin-top: 30px;
 }
+#container .clientes .row,
 #container .servicos .row {
   padding-top: 20px;
 }
+#container .clientes .row > div,
 #container .servicos .row > div {
   margin: 20px 0;
   min-height: 160px;
 }
+#container .clientes .icone,
 #container .servicos .icone {
   border: 1px solid #c0392b;
   border-radius: 50%;
@@ -179,12 +171,27 @@ body {
   padding: 16px 0;
   width: 80px;
 }
+#container .clientes .icone .fa,
 #container .servicos .icone .fa {
   font-size: 48px;
 }
+#container .clientes .descricao,
 #container .servicos .descricao {
   padding: 15px 0;
   text-transform: uppercase;
+}
+#container .clientes p.uppercase,
+#container .servicos p.uppercase {
+  margin-top: 15px;
+}
+#container .clientes p.uppercase ~ p,
+#container .servicos p.uppercase ~ p {
+  font-size: 16px;
+}
+#container .clientes .img-responsive.cliente-logo,
+#container .servicos .img-responsive.cliente-logo {
+  margin: 0 auto;
+  min-height: 65px;
 }
 #container .rodape {
   bottom: 0;
