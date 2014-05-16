@@ -106,10 +106,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-#container .navbar .navbar-collapse .navbar-nav.hidden-xs li a.active,
-#container .navbar .navbar-collapse .navbar-nav.hidden-xs li a:active,
-#container .navbar .navbar-collapse .navbar-nav.hidden-xs li a:focus,
-#container .navbar .navbar-collapse .navbar-nav.hidden-xs li a:hover {
+#container .navbar .navbar-collapse .navbar-nav.hidden-xs li.active a,
+#container .navbar .navbar-collapse .navbar-nav.hidden-xs li:active a,
+#container .navbar .navbar-collapse .navbar-nav.hidden-xs li:focus a,
+#container .navbar .navbar-collapse .navbar-nav.hidden-xs li:hover a {
   color: #ffffff;
   background-color: #c0392b;
 }
@@ -123,8 +123,10 @@ body {
   color: #c0392b;
   text-transform: uppercase;
 }
-#container .navbar .navbar-collapse .navbar-nav.hidden-lg.hidden-md.hidden-sm li > a:hover,
-#container .navbar .navbar-collapse .navbar-nav.hidden-lg.hidden-md.hidden-sm li > a:focus {
+#container .navbar .navbar-collapse .navbar-nav.hidden-lg.hidden-md.hidden-sm li:hover > a,
+#container .navbar .navbar-collapse .navbar-nav.hidden-lg.hidden-md.hidden-sm li:focus > a,
+#container .navbar .navbar-collapse .navbar-nav.hidden-lg.hidden-md.hidden-sm li:active > a,
+#container .navbar .navbar-collapse .navbar-nav.hidden-lg.hidden-md.hidden-sm li.active > a {
   background-color: #c0392b;
   color: #ffffff;
 }

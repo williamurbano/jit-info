@@ -1,15 +1,30 @@
 /*! jit-info 2014-05-16 */
-var menu    = document.getElementById("menu"),
-    anchors = menu.getElementsByTagName("a"),
-    actived = false;
+var menu, navs, itens, anchor, href, i, j;
 
-for(var i in anchors) {
-  if(anchors[i].href == window.location.href) {
-    anchors[i].className += "active";
-    actived = true;
+href = window.location.href.split("/");
+menu = document.getElementById("menu");
+navs = menu.getElementsByClassName("navbar-nav");
+
+if(href[href.length-1].length > 0) {
+  for (i in navs) {
+    if (!isNaN(i)) {
+      itens = navs[i].getElementsByTagName("li");
+
+      for(j in itens) {
+        if(!isNaN(j)) {
+          anchor = itens[j].getElementsByTagName("a")[0];
+          if(anchor.href == window.location.href) {
+            itens[j].className += "active";
+          }
+        }
+      }
+    }
   }
-}
-
-if(!actived) {
-  anchors[0].className += "active";
+} else {
+  for(i in navs) {
+    if(!isNaN(i)) {
+      itens = navs[i].getElementsByTagName("li");
+      itens[0].className += "active";
+    }
+  }
 }
