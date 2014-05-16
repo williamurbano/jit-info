@@ -15,6 +15,11 @@
 @menuFontSize: 13px;
 @textApresentacao: 18px;
 @h1Apresentacao: 30px;
+@servicosIconeFontSize: 48px;
+
+// medidas fixas
+@iconeWidth: 80px;
+@servicosIconePaddingHoriz: (@iconeWidth - @servicosIconeFontSize) / 2;
 
 * {
   margin: 0;
@@ -124,6 +129,35 @@ body {
 
     &.text-center {
       margin-top: 130px;
+    }
+  }
+
+  .servicos {
+    margin-top: 30px;
+
+    .row {
+      padding-top: 20px;
+
+      &>div {
+        margin: 20px 0;
+      }
+    }
+
+    .icone {
+      width: @iconeWidth;
+      display: inline-block;
+      border: 1px solid @pomegranate;
+      border-radius: 50%;
+      padding: @servicosIconePaddingHoriz 0;
+
+      .fa {
+        font-size: @servicosIconeFontSize;
+      }
+    }
+
+    .descricao {
+      text-transform: uppercase;
+      padding: 15px 0;
     }
   }
 

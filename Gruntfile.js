@@ -64,9 +64,9 @@ module.exports = function(grunt) {
         src: ['src/partials/head.html', 'src/pages/servicos.html', 'src/partials/footer.html'],
         dest: 'servicos.html'
       },
-      sobre: {
-        src: ['src/partials/head.html', 'src/pages/sobre.html', 'src/partials/footer.html'],
-        dest: 'sobre.html'
+      quemSomos: {
+        src: ['src/partials/head.html', 'src/pages/quem-somos.html', 'src/partials/footer.html'],
+        dest: 'quem-somos.html'
       }
     },
 
@@ -129,6 +129,14 @@ module.exports = function(grunt) {
       vendor: {
         files: ['src/vendor/**/*.*'],
         tasks: ['copy'],
+        options: {
+          nospawn: true
+        }
+      },
+
+      html: {
+        files: ['src/pages/*', 'src/partials/*'],
+        tasks: ['concat'],
         options: {
           nospawn: true
         }
