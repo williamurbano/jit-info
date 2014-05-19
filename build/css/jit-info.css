@@ -820,9 +820,6 @@ textarea {
   min-height: 100%;
   position: relative;
 }
-#container .navbar {
-  background: none;
-}
 #container .navbar .navbar-header .navbar-brand {
   height: auto;
 }
@@ -995,6 +992,7 @@ textarea {
 }
 @media (max-width: 767px) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: 13px;
     font-weight: 500;
     line-height: 24px;
@@ -1008,6 +1006,9 @@ textarea {
   .apresentacao.text-center {
     margin-top: 30px;
   }
+  .apresentacao.quem-somos {
+    margin-top: 11px;
+  }
   .contato .row .column-aside:last-child {
     border-top: 1px solid #e7e7e7;
     padding-top: 20px;
@@ -1015,6 +1016,7 @@ textarea {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -1027,6 +1029,9 @@ textarea {
   .apresentacao.text-center {
     margin-top: 130px;
   }
+  .apresentacao.quem-somos {
+    margin-top: 50px;
+  }
   .contato .row .column-aside:last-child {
     border-top: 1px solid #e7e7e7;
     padding-top: 20px;
@@ -1034,6 +1039,7 @@ textarea {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
@@ -1046,10 +1052,14 @@ textarea {
   }
   .apresentacao.text-center {
     margin-top: 130px;
+  }
+  .apresentacao.quem-somos {
+    margin-top: 50px;
   }
 }
 @media (min-width: 1200px) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
@@ -1062,5 +1072,8 @@ textarea {
   }
   .apresentacao.text-center {
     margin-top: 130px;
+  }
+  .apresentacao.quem-somos {
+    margin-top: 50px;
   }
 }
