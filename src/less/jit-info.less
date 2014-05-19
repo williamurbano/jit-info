@@ -109,7 +109,6 @@ textarea {
   
   // sobresecrevendo estilos do twitter bootstrap
   .navbar {
-    background: none;
     // border: none;
     
     .navbar-header {
@@ -325,6 +324,7 @@ textarea {
 
 @media (max-width: @screen-xs-max) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: @xsTextApresentacao;
     font-weight: 500;
     line-height: 24px;
@@ -335,9 +335,13 @@ textarea {
       padding: 0;
       text-transform: uppercase;
     }
-
+  
     &.text-center {
       margin-top: 30px;
+    }
+
+    &.quem-somos {
+      margin-top: 11px;
     }
   }
 
@@ -353,6 +357,7 @@ textarea {
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: @smTextApresentacao;
     line-height: 24px;
 
@@ -362,9 +367,13 @@ textarea {
       padding: 0;
       text-transform: uppercase;
     }
-
+  
     &.text-center {
       margin-top: 130px;
+    }
+
+    &.quem-somos {
+      margin-top: 50px;
     }
   }
 
@@ -380,6 +389,7 @@ textarea {
 
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: @textApresentacao;
     font-weight: 500;
     line-height: 24px;
@@ -390,15 +400,20 @@ textarea {
       padding: 0;
       text-transform: uppercase;
     }
-
+  
     &.text-center {
       margin-top: 130px;
+    }
+
+    &.quem-somos {
+      margin-top: 50px;
     }
   }
 }
 
 @media (min-width: @screen-lg-min) {
   .apresentacao {
+    padding-bottom: 50px;
     font-size: @textApresentacao;
     font-weight: 500;
     line-height: 24px;
@@ -409,9 +424,13 @@ textarea {
       padding: 0;
       text-transform: uppercase;
     }
-
+  
     &.text-center {
       margin-top: 130px;
+    }
+
+    &.quem-somos {
+      margin-top: 50px;
     }
   }
 }
