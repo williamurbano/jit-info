@@ -969,6 +969,13 @@ textarea {
 #container .servicos .row > div {
   margin: 20px 0;
 }
+#container .clientes a {
+  color: #c0392b;
+}
+#container .clientes a:hover {
+  color: #c0392b;
+  text-decoration: none;
+}
 #container .contato .row {
   padding-top: 20px;
 }
