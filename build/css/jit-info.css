@@ -778,6 +778,11 @@ body {
 textarea {
   resize: none;
 }
+#email-status {
+  font-size: 13px;
+  margin: 5px 15px;
+  display: inline-block;
+}
 .uppercase {
   text-transform: uppercase;
   font-weight: 600;

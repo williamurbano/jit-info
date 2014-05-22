@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-10 col-sm-10 col-md-5 col-lg-5 column-aside">
       <div class="row">
-        <form action="" method="POST" role="form" class="formulario-de-contato">
+        <form action="enviar-contato.php" method="post" role="form" class="formulario-de-contato">
           <div class="form-group">
             <input type="text" class="form-control" name="contato[nome]" id="nome" placeholder="Nome">
           </div>
@@ -24,7 +24,8 @@
           </div>
 
           <div class="form-group">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary pull-left">Enviar</button>
+            <p id="email-status" class="text-success"></p>
           </div>
         </form>
       </div>
