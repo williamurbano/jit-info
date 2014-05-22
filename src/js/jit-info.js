@@ -34,3 +34,39 @@
   var date = new Date();
   document.getElementById('year').innerHTML = date.getFullYear();
 })(document);
+
+;(function($){
+  $('.formulario-de-contato').submit(function(e) {
+    e.preventDefault();
+
+    var resp, $form = $(this);
+
+    $.ajax({
+      url: 'enviar-contato.php',
+      type: 'post',
+      dataType: 'json',
+      data: $form.serialize(),
+      context: $form,
+      beforeSend: function() {
+        $('#email-status').fadeOut(function() {
+          $(this).attr('class', 'text-muted').text("Enviando mensagem").fadeIn();
+        });
+      }
+    }).done(function(data) {
+      resp = data;
+    }).always(function() {
+      setTimeout(function() {
+        $('#email-status').fadeOut(function() {
+          $(this).attr('class', resp.class).text(resp.msg);
+          $(this).fadeIn(function() {
+            var $this = $(this);
+            setTimeout(function() {
+              $form.find('input, textarea').val('')
+              $this.fadeOut();
+            }, 2000);
+          });
+        });
+      }, 2000);
+    });
+  });
+})(jQuery);
