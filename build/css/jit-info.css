@@ -825,6 +825,9 @@ textarea {
   min-height: 100%;
   position: relative;
 }
+#container .navbar {
+  background: none;
+}
 #container .navbar .navbar-header .navbar-brand {
   height: auto;
 }
