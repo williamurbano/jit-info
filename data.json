@@ -1,0 +1,75 @@
+{
+  "servicos": {
+    "plataforma_linux": {
+      "titulo": "Plataforma Linux",
+      "itens": [
+        "Firewall / Proxy",
+        "Compartilhamento de Arquivos",
+        "Servidor de E-mail",
+        "Servidor Web",
+        "Banco de Dados ",
+        "Comunicador Interno",
+        "Monitoramento",
+        "Backup Corporativo",
+        "Gerenciamento de Projetos",
+        "Controle de Versão de Software",
+        "VPN"
+      ]
+    },
+    "plataforma_microsoft": {
+      "titulo": "Plataforma Microsoft",
+      "itens": [
+        "Controlador de Domínio",
+        "Sharepoint",
+        "File Server",
+        "iSCSI",
+        "DHCP",
+        "Office Comunicator",
+        "Print Server",
+        "DNS Interno",
+        "Web Server"
+      ]
+    },
+    "virtualização": {
+      "titulo": "Virtualização",
+      "itens": [
+        "Redução dos custos com hardware, manutenção e com equipe.",
+        "Simplifique e automatize projetos.",
+        "Virtualize as cargas de trabalho mais exigentes.",
+        "Aumente a segurança e a confiabilidade.",
+        "Citrix Xenserver",
+        "Citrix Xendesktop",
+        "Citrix Xenapp",
+        "Virtualização de Servidores e Serviços com VMWare"
+      ]
+    },
+    "redes": {
+      "titulo": "Redes",
+      "itens": [
+        "Configuração de Switch's e Roteadores",
+        "Gerenciamento de Switch's e Roteadores",
+        "Segmentação de Redes",
+        "Gerenciamento e Implantação de Cabeamento Estruturado",
+        "Gerenciamento e Implantação de Redes Sem Fio (Wireless)"
+      ]
+    },
+    "suporte_tecnico": {
+      "titulo": "Suporte Técnico",
+      "itens": [
+        "Terceirização total ou parcial de TI",
+        "Suporte Técnico remoto ou local",
+        "Resolução de problemas pertinentes a software e hardware",
+        "Instalação de sistemas operacionais Microsoft e Linux",
+        "Formatação de micro computadores e notebooks",
+        "Backup de dados",
+        "Instalação de Impressoras",
+        "Instalação de Programas"
+      ]
+    },
+    "consultoria": {
+      "titulo": "Consultoria",
+      "itens": [
+      ]
+    }
+  }
+}

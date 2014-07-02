@@ -141,6 +141,14 @@ module.exports = function(grunt) {
           nospawn: true
         }
       }
+    },
+    connect: {
+      server: {
+        options: {
+          port      : 8000,
+          base      : './'
+        }
+      }
     }
   });
 
@@ -150,8 +158,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['watch']);
   grunt.registerTask('build', ['clean', 'less', 'concat', 'uglify', 'copy']);
+  grunt.registerTask('default', ['build', 'connect', 'watch']);
 
 };

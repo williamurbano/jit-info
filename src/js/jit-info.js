@@ -69,4 +69,48 @@
       }, 2000);
     });
   });
+
+  var modalServicoDetalhe;
+
+  $.ajax({
+    url: 'data.json',
+    method: "GET"
+  }).done(function(data) {
+    modalServicoDetalhe = data.servicos;
+  });
+
+  $('.servicos > .row > .item').click(function() {
+    var $elModalServicoDetalhe = $('#modal_servico_detalhe');
+    var $modalTitle            = $elModalServicoDetalhe.find('.modal-title');
+    var $modalBody             = $elModalServicoDetalhe.find('.modal-body');
+    var $icone                 = $(this).find('.icone > .fa').clone();
+    var $ul                    = $('<ul></ul>');
+    var $li;
+    var $p                     = $('<p></p>');
+    var id                     = $(this).data('id');
+    var servicos               = modalServicoDetalhe[id];
+    var i                      = 0;
+
+    $modalTitle.text(servicos.titulo);
+
+    for(i = 0; i < servicos.itens.length; i++) {
+      console.log(servicos.itens[i]);
+      $li = $('<li></li>');
+      $li.text(servicos.itens[i]);
+      $ul.append($li);
+
+      console.log($li);
+    }
+
+    $p.append($ul);
+
+    $modalBody.empty().append($p);
+
+
+    // console.log(modalServicoDetalhe[id]);
+    // console.log($icone);
+
+    $elModalServicoDetalhe.modal('show');
+
+  });
 })(jQuery);
