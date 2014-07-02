@@ -116,6 +116,7 @@ textarea {
   // sobresecrevendo estilos do twitter bootstrap
   .navbar {
     // border: none;
+    background: none;
     
     .navbar-header {
       .navbar-brand {
@@ -253,7 +254,18 @@ textarea {
       padding-top: 20px;
 
       &>div {
-        min-height: 160px;
+        min-height: 140px;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:hover {
+          background-color: @pomegranate;
+          color: @white;
+          .icone {
+            border-color: @white;
+          }
+        }
       }
     }
 
@@ -352,6 +364,11 @@ textarea {
       }
     }
   }
+}
+
+.modal-body ul {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (max-width: @screen-xs-max) {
