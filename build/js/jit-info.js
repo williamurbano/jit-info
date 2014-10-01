@@ -1,4 +1,4 @@
-/*! jit-info 2014-07-15 */
+/*! jit-info 2014-10-01 */
 ;(function(document) {
   var menu, navs, itens, anchor, href, i, j;
 
