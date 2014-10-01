@@ -941,15 +941,15 @@ textarea {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#container .contato .row > div:hover,
-#container .clientes .row > div:hover,
-#container .servicos .row > div:hover {
+#container .contato .row > div:not(.no-hover):hover,
+#container .clientes .row > div:not(.no-hover):hover,
+#container .servicos .row > div:not(.no-hover):hover {
   background-color: #c0392b;
   color: #ffffff;
 }
-#container .contato .row > div:hover .icone,
-#container .clientes .row > div:hover .icone,
-#container .servicos .row > div:hover .icone {
+#container .contato .row > div:not(.no-hover):hover .icone,
+#container .clientes .row > div:not(.no-hover):hover .icone,
+#container .servicos .row > div:not(.no-hover):hover .icone {
   border-color: #ffffff;
 }
 #container .contato .icone,
