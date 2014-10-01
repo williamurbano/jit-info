@@ -1,15 +1,15 @@
 <?php
 
 // Servidor SMTP
-define(SMTP_HOST         , "smtp.dominio.com.br");
+define(SMTP_HOST         , "smtp.jit-info.com.br");
 // Usuário de autenticação SMTP
-define(SMTP_USERNAME     , "username@dominio.com.br");
+define(SMTP_USERNAME     , "site@jit-info.com.br");
 // Senha do usuário SMTP
-define(SMTP_PASSWORD     , "p455w0rd");
+define(SMTP_PASSWORD     , "s1t3@fx");
 // E-mail de destino do contato
-define(SMTP_DESTINO_EMAIL, "username@dominio.com.br");
+define(SMTP_DESTINO_EMAIL, "site@jit-info.com.br");
 // Nome do usuário de destino
-define(SMTP_DESTINO_NOME , "User Name");
+define(SMTP_DESTINO_NOME , "Site");
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   require('phpmailer/class.phpmailer.php');
